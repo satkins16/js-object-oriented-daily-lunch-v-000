@@ -19,7 +19,7 @@ class Customer {
   meals() {
     return this.deliveries().filter(delivery => {
       return store.meals.find(meal => {
-        return meal.id === deliver.mealId
+        return meal.id === delivery.mealId
       })
     })
   }
