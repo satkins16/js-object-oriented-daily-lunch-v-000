@@ -15,6 +15,10 @@ class Customer {
       return delivery.customerId === this.id
     })
   }
+
+  meals() {
+    return this.deliveries().filter()
+  }
 }
 
 let mealId = 0
