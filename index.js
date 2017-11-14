@@ -7,6 +7,6 @@ class Customer {
     this.id = ++customerId
     this.name = name
 
-
+    store.customers.push(this)
   }
 }
