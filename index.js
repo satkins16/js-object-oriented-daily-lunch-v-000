@@ -45,6 +45,12 @@ class Meal {
       return delivery.mealId === this.id
     })
   }
+
+  customers() {
+    return this.deliveries().map(delivery => {
+      return delivery.
+    })
+  }
 }
 
 let deliveryId = 0
@@ -65,6 +71,12 @@ class Delivery {
   meal() {
     return store.meals.find(meal => {
       return meal.id === this.mealId
+    })
+  }
+
+  customer() {
+    return store.customers.find(customer => {
+      return customer.id === this.customerId
     })
   }
 }
