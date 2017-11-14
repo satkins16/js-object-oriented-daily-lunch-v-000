@@ -18,7 +18,7 @@ class Customer {
 
   meals() {
     return this.deliveries().filter(delivery => {
-      return this.meal
+      return this.meal()
     })
   }
 }
