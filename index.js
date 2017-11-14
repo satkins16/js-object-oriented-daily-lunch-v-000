@@ -106,5 +106,11 @@ class Employer {
     })
   }
 
+  deliveries() {
+    let allDeliveries = this.employees().map(employee => {
+      return employee.deliveries()
+    })
+  }
+
 
 }
