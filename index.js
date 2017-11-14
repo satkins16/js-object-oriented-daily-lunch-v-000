@@ -35,7 +35,6 @@ class Delivery {
       this.customerId = customer.id
     }
 
-
     store.deliveries.push(this)
   }
 }
@@ -46,5 +45,7 @@ class Employer {
   constructor(name) {
     this.id = ++employerId
     this.name = name
+
+    store.employers.push(this)
   }
 }
