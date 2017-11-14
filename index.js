@@ -6,8 +6,10 @@ class Customer {
   constructor(name, employer) {
     this.id = ++customerId
     this.name = name
-    this.employerID = employer.id
-
+    if(employer) {
+      this.employerID = employer.id
+    }
+    
     store.customers.push(this)
   }
 
