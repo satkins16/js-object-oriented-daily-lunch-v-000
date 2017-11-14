@@ -3,10 +3,10 @@ let store = {customers: [], deliveries: [], employers: [], meals: []}
 let customerId = 0
 
 class Customer {
-  constructor(name, employer = {}) {
+  constructor(name, employer) {
     this.id = ++customerId
     this.name = name
-    this.employerID = employer.id
+    this.employerId = employer.id
 
     store.customers.push(this)
   }
