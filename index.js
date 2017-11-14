@@ -114,5 +114,13 @@ class Employer {
     return merged;
   }
 
+  meals() {
+    let allMeals = this.deliveries().map(delivery => {
+      return delivery.meal();
+    });
+    let uniqueMeals = [...new Set(allMeals)];
+    return uniqueMeals;
+  }   
+
 
 }
