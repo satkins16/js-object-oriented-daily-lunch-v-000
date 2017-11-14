@@ -110,6 +110,7 @@ class Employer {
     let allDeliveries = this.employees().map(employee => {
       return employee.deliveries()
     })
+    return allDeliveries
   }
 
 
