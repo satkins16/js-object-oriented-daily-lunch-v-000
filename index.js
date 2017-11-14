@@ -23,11 +23,11 @@ class Meal {
   }
 }
 
-let customerId = 0
+let deliveryId = 0
 
 class Delivery {
   constructor(meal, customer) {
-    this.id = ++customerId
+    this.id = ++deliveryId
     this.mealId = meal.id
     this.customerId = customer.id
 
