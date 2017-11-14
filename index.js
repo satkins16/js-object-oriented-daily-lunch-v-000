@@ -39,3 +39,12 @@ class Delivery {
     store.deliveries.push(this)
   }
 }
+
+let employerId = 0
+
+class Employer {
+  constructor(name) {
+    this.id = ++employerId
+    this.name = name
+  }
+}
