@@ -32,7 +32,7 @@ class Delivery {
       this.mealId = meal.id
     }
     if(delivery) {
-      this.customerId = customer.id
+      this.deliveryId = delivery.id
     }
 
 
