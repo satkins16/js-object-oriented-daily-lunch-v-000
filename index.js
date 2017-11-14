@@ -27,6 +27,7 @@ let customerId = 0
 
 class Delivery {
   constructor(meal, customer) {
+    this.id = ++customerId
     this.mealId = meal.id
     this.customerId = customer.id
 
