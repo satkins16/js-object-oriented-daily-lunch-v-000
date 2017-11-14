@@ -30,6 +30,8 @@ class Delivery {
     this.id = ++deliveryId
     if(meal) {
       this.mealId = meal.id
+    }
+    if(delivery) {
       this.customerId = customer.id
     }
 
