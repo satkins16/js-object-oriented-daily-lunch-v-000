@@ -22,3 +22,14 @@ class Meal {
     store.meals.push(this)
   }
 }
+
+let customerId = 0
+
+class Delivery {
+  constructor(meal, customer) {
+    this.mealId = meal.id
+    this.customerId = customer.id
+
+    store.deliveries.push(this)
+  }
+}
