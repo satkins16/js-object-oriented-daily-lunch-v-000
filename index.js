@@ -17,8 +17,8 @@ class Customer {
   }
 
   meals() {
-    return this.deliveries().filter(delivery => {
-      return deliver.meal()
+    return this.deliveries().map(delivery => {
+      return delivery.meal()
     })
   }
 }
