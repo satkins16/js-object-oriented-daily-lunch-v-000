@@ -21,6 +21,12 @@ class Customer {
       return delivery.meal()
     })
   }
+
+  totalSpent() {
+    return this.meals().reduce(function(sum, meal) {
+      return sum + meal.price
+    })
+  }
 }
 
 let mealId = 0
